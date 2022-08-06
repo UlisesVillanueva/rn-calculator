@@ -29,7 +29,7 @@ export const styles = StyleSheet.create({
         backgroundColor:'#9B9B9B',
         borderRadius:100,
         justifyContent:'center',
-        margin:5
+        margin:6
     },
     buttonText:{
         textAlign:'center',

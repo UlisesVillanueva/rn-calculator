@@ -5,13 +5,14 @@ import { styles } from '../theme/appTheme'
 interface Props{
     text:string;
     color?: string;
-    ancho?: boolean;
+    width?: boolean;
 }
-export const Button = ({ text, color='#2D2D2D'}:Props) => {
+export const Button = ({ text, color='#2D2D2D', width=false}:Props) => {
   return (
     <View style={{
         ...styles.button,
-        backgroundColor:color
+        backgroundColor:color,
+        width: (width)?  160 : 80,
     }}>
     <Text style={{
         ...styles.buttonText, 
