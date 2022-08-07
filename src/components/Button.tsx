@@ -6,7 +6,7 @@ interface Props {
     text: string;
     color?: string;
     width?: boolean;
-    action?:(numValue: string)=> void;
+    action?:(numValue: string)=> (void | undefined);
 }
 export const Button = ({ text, color = '#2D2D2D', width = false, action}: Props) => {
     return (
@@ -14,7 +14,7 @@ export const Button = ({ text, color = '#2D2D2D', width = false, action}: Props)
             <View style={{
                 ...styles.button,
                 backgroundColor: color,
-                width: (width) ? 160 : 80,
+                width: (width) ? 170 : 80,
             }}>
                 <Text style={{
                     ...styles.buttonText,
