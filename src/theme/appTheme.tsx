@@ -5,7 +5,7 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
     background:{
         flex:1,
-        backgroundColor:'black',
+        backgroundColor:'#292d36',
 
     },
     calculatorContainer:{
@@ -26,8 +26,8 @@ export const styles = StyleSheet.create({
     button:{
         height:80,
         width:80,
-        backgroundColor:'#9B9B9B',
-        borderRadius:100,
+        backgroundColor:'##272b33',
+        borderRadius:32,
         justifyContent:'center',
         margin:6
     },
@@ -35,7 +35,7 @@ export const styles = StyleSheet.create({
         textAlign:'center',
         padding:10,
         color:'black',
-        fontSize:35,
+        fontSize:25,
         fontWeight:'400'
     },
     row:{

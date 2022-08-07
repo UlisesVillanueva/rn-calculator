@@ -8,18 +8,17 @@ interface Props {
     width?: boolean;
     action?:(numValue: string)=> (void | undefined);
 }
-export const Button = ({ text, color = '#2D2D2D', width = false, action}: Props) => {
+export const Button = ({ text, color = 'white', width = false, action}: Props) => {
     return (
         <TouchableOpacity onPress={ () => action(text)}>
             <View style={{
                 ...styles.button,
-                backgroundColor: color,
+                backgroundColor: '#272b33',
                 width: (width) ? 170 : 80,
             }}>
                 <Text style={{
                     ...styles.buttonText,
-                    color: (color === '#9B9B9B')
-                        ? 'black' : 'white'
+                    color
                 }}>{text}</Text>
             </View>
         </TouchableOpacity>
