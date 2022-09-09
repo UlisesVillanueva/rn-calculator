@@ -11,7 +11,7 @@ export const styles = StyleSheet.create({
     calculatorContainer:{
         paddingHorizontal:20,
         flex:1,
-        justifyContent:'flex-end'
+        justifyContent:'flex-start'
     },
     result:{
         color:'white',
@@ -36,7 +36,7 @@ export const styles = StyleSheet.create({
         padding:10,
         color:'black',
         fontSize:25,
-        fontWeight:'400'
+        fontWeight:'450'
     },
     row:{
         flexDirection:'row',
